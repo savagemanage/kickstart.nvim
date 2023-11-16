@@ -277,6 +277,8 @@ vim.o.termguicolors = true
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
+-- Add <leader>pv to exit to directory
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 -- Remap for dealing with word wrap
