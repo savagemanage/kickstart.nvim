@@ -1,7 +1,5 @@
 # kickstart.nvim
 
-https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
-
 ### Introduction
 
 A starting point for Neovim that is:
@@ -35,24 +33,17 @@ Neovim's configurations are located under the following paths, depending on your
 | Linux | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
 | MacOS | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
 | Windows (cmd)| `%userprofile%\AppData\Local\nvim\` |
-| Windows (powershell)| `$env:USERPROFILE\AppData\Local\nvim\` |
 
 Clone kickstart.nvim:
 
+** Linux/Mac **
 ```sh
-# on Linux and Mac
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone git@github.com:savagemanage/kickstart.nvim.git ${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
-
+** Windows **
 ```
-# on Windows (cmd)
-git clone https://github.com/nvim-lua/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
-```
-
-```
-# on Windows (powershell)
-git clone https://github.com/nvim-lua/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\ 
+git clone git@github.com:savagemanage/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
 ```
 
 
