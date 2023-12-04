@@ -25,29 +25,24 @@ Requirements:
 * Make sure to review the readmes of the plugins if you are experiencing errors. In particular:
   * [ripgrep](https://github.com/BurntSushi/ripgrep#installation) is required for multiple [telescope](https://github.com/nvim-telescope/telescope.nvim#suggested-dependencies) pickers.
 * See [Windows Installation](#Windows-Installation) if you have trouble with `telescope-fzf-native`
+* On Ubuntu, install `build-essential`
 
 Neovim's configurations are located under the following paths, depending on your OS:
 
-| OS | PATH |
-| :- | :--- |
-| Linux | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
-| MacOS | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
-| Windows (cmd)| `%userprofile%\AppData\Local\nvim\` |
+| OS            | PATH                                      |
+| :------------ | :---------------------------------------- |
+| Linux/MacOS   | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
+| Windows (cmd) | `%userprofile%\AppData\Local\nvim\`       |
 
 Clone kickstart.nvim:
-**Ubuntu**
-```sh
-sudo apt update && sudo apt install build-essential
-git clone git@github.com:savagemanage/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-```
 
-**Mac**
+**Linux/MacOS (I use Arch btw)**
 ```sh
-git clone git@github.com:savagemanage/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/savagemanage/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 **Windows**
-```
+```sh
 git clone git@github.com:savagemanage/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
 ```
 
